@@ -1,0 +1,1600 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>SSENSE</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/page.css">
+
+    <script type="text/javascript">
+        //初始化 渐变显示
+        function FadeLimit(obj, start, end, time) {
+            var _a;
+            _a = (start > end) ? -5 : 5;
+            // if(document.all){
+            // obj.style.filter="alpha(opacity="+parseInt(start+_a)+")";    
+            // }else
+            // {
+            obj.style.opacity = parseInt(start + _a) / 100;
+
+            // }
+            if (start == end) {
+                return;
+            }
+            window.setTimeout(function() {
+                FadeLimit(obj, start + _a, end, time);
+            }, time);
+        }
+
+         // FadeLimit(obj,start,end,time);
+    </script>
+
+    <!--[if lt IE 9]>
+<script type="text/javascript">
+function FadeLimit(obj,start,end,time){
+    var _a;
+    _a=(start>end)?-5:5;
+    obj.style.filter="alpha(opacity="+parseInt(start+_a)+")";    
+    if(start==end){return;}
+    window.setTimeout(function(){
+        FadeLimit(obj,start+_a,end,time);
+    },time);
+}
+</script>
+<![endif]-->
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <a class="logo" href="index.html">
+            <img src="images/logo.png" alt="logo">
+        </a>
+
+        <ul class="nav">
+            <li>
+                <a href="men.html">men</a>
+            </li>
+            <li>
+                <a href="women.html">women</a>
+            </li>
+        </ul>
+
+        <div class="search">
+            <input id="search" type="text" value="SEARCH" />
+            <input id="searchBtn" class="none" type="button" />
+        </div>
+
+        <ul class="menu">
+            <li>
+                <a href="">FRANcAIS</a>
+            </li>
+            <li>
+                <a href="">NEWSLETTER&nbsp;SIGN-UP</a>
+            </li>
+            <li>
+                <a href="">help</a>
+            </li>
+            <li>
+                <a href="">LOGIN</a>
+            </li>
+            <li>
+                <a href="">SHOPPING&nbsp;BAG</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="main w">
+        <!--侧边栏开始-->
+        <div class="side_bar">
+            <ul>
+                <li>
+                    <a class="fb" href="#">ALL CATEGORIES</a>
+                </li>
+                <li>
+                    <a href="#">ACCESSORIES</a>
+                </li>
+                <li>
+                    <a href="#">BAGS</a>
+                </li>
+                <li>
+                    <a href="#">BELTS AND SUSPENDERS</a>
+                </li>
+                <li>
+                    <a href="#">BOOTS</a>
+                </li>
+                <li>
+                    <a href="#">CASUAL SHOES</a>
+                </li>
+                <li>
+                    <a href="#">GLOVES</a>
+                </li>
+                <li>
+                    <a href="#">HATS</a>
+                </li>
+                <li>
+                    <a href="#">JEANS</a>
+                </li>
+                <li>
+                    <a href="#">JEWELRY</a>
+                </li>
+                <li>
+                    <a href="#">OUTERWEAR</a>
+                </li>
+                <li>
+                    <a href="#">PANTS</a>
+                </li>
+                <li>
+                    <a href="#">SANDALS</a>
+                </li>
+                <li>
+                    <a href="#">SCARVES</a>
+                </li>
+                <li>
+                    <a href="#">SHIRTS</a>
+                </li>
+                <li>
+                    <a href="#">SHORTS</a>
+                </li>
+                <li>
+                    <a href="#">SNEAKERS</a>
+                </li>
+                <li>
+                    <a href="#">SUITS</a>
+                </li>
+                <li>
+                    <a href="#">SUNGLASSES</a>
+                </li>
+                <li>
+                    <a href="#">SWEATERS</a>
+                </li>
+                <li>
+                    <a href="#">SWIMWEAR</a>
+                </li>
+                <li>
+                    <a href="#">TIES</a>
+                </li>
+                <li>
+                    <a href="#">UNDERWEAR</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a class="fb" href="#">ALL DESIGNERS</a>
+                </li>
+                <li>
+                    <a href="#">3.1 PHILLIP LIM</a>
+                </li>
+                <li>
+                    <a href="#">A.P.C.</a>
+                </li>
+                <li>
+                    <a href="#">ACNE STUDIOS</a>
+                </li>
+                <li>
+                    <a href="#">ADIDAS BY TOM DIXON</a>
+                </li>
+                <li>
+                    <a href="#">ADIDAS ORIGINALS BY O.C.</a>
+                </li>
+                <li>
+                    <a href="#">ALEJANDRO INGELMO</a>
+                </li>
+                <li>
+                    <a href="#">ALEXANDER MCQUEEN</a>
+                </li>
+                <li>
+                    <a href="#">ALEXANDER WANG</a>
+                </li>
+                <li>
+                    <a href="#">ANN DEMEULEMEESTER</a>
+                </li>
+                <li>
+                    <a href="#">BALMAIN</a>
+                </li>
+                <li>
+                    <a href="#">BAND OF OUTSIDERS</a>
+                </li>
+                <li>
+                    <a href="#">BELSTAFF</a>
+                </li>
+                <li>
+                    <a href="#">BLACK LIMITED EDITION</a>
+                </li>
+                <li>
+                    <a href="#">BLK DNM</a>
+                </li>
+                <li>
+                    <a href="#">CALVIN KLEIN COLLECTION</a>
+                </li>
+                <li>
+                    <a href="#">CALVIN KLEIN UNDERWEAR</a>
+                </li>
+                <li>
+                    <a href="#">CANADA GOOSE</a>
+                </li>
+                <li>
+                    <a href="#">CARVEN</a>
+                </li>
+                <li>
+                    <a href="#">CASTAÑER</a>
+                </li>
+                <li>
+                    <a href="#">CHRISTOPHER KANE</a>
+                </li>
+                <li>
+                    <a href="#">COMME DES GARÇONS HOMME PLUS</a>
+                </li>
+                <li>
+                    <a href="#">COMME DES GARÇONS PLAY</a>
+                </li>
+                <li>
+                    <a href="#">COMME DES GARÇONS WALLETS</a>
+                </li>
+                <li>
+                    <a href="#">COTE &amp; CIEL</a>
+                </li>
+                <li>
+                    <a href="#">CY CHOI</a>
+                </li>
+                <li>
+                    <a href="#">D.GNAK BY KANG.D</a>
+                </li>
+                <li>
+                    <a href="#">DAMIR DOMA</a>
+                </li>
+                <li>
+                    <a href="#">DENIS GAGNON</a>
+                </li>
+                <li>
+                    <a href="#">DIESEL</a>
+                </li>
+                <li>
+                    <a href="#">DIESEL BLACK GOLD</a>
+                </li>
+                <li>
+                    <a href="#">DIOR HOMME</a>
+                </li>
+                <li>
+                    <a href="#">DOLCE &amp; GABBANA</a>
+                </li>
+                <li>
+                    <a href="#">DR. MARTENS</a>
+                </li>
+                <li>
+                    <a href="#">DSQUARED2</a>
+                </li>
+                <li>
+                    <a href="#">DUVETICA</a>
+                </li>
+                <li>
+                    <a href="#">EN NOIR</a>
+                </li>
+                <li>
+                    <a href="#">BLK DNM</a>
+                </li>
+                <li>
+                    <a href="#">ETQ AMSTERDAM</a>
+                </li>
+                <li>
+                    <a href="#">FIORENTINI + BAKER</a>
+                </li>
+                <li>
+                    <a href="#">FOOT THE COACHER</a>
+                </li>
+                <li>
+                    <a href="#">GARETH PUGH</a>
+                </li>
+                <li>
+                    <a href="#">GIUSEPPE ZANOTTI</a>
+                </li>
+                <li>
+                    <a href="#">GIVENCHY</a>
+                </li>
+                <li>
+                    <a href="#">GOLDEN GOOSE</a>
+                </li>
+                <li>
+                    <a href="#">H BY HUDSON</a>
+                </li>
+                <li>
+                    <a href="#">HOOD BY AIR</a>
+                </li>
+                <li>
+                    <a href="#">JIL SANDER</a>
+                </li>
+                <li>
+                    <a href="#">JIMMY CHOO</a>
+                </li>
+                <li>
+                    <a href="#">JULIUS</a>
+                </li>
+                <li>
+                    <a href="#">JUNYA WATANABE</a>
+                </li>
+                <li>
+                    <a href="#">JUUN.J</a>
+                </li>
+                <li>
+                    <a href="#">KENZO</a>
+                </li>
+                <li>
+                    <a href="#">KRISVANASSCHE</a>
+                </li>
+                <li>
+                    <a href="#">KSUBI</a>
+                </li>
+                <li>
+                    <a href="#">KTZ</a>
+                </li>
+                <li>
+                    <a href="#">LANVIN</a>
+                </li>
+                <li>
+                    <a href="#">LEVI'S</a>
+                </li>
+                <li>
+                    <a href="#">LEVIS VINTAGE CLOTHING</a>
+                </li>
+                <li>
+                    <a href="#">MAISON KITSUNE</a>
+                </li>
+                <li>
+                    <a href="#">MAISON MARTIN MARGIELA</a>
+                </li>
+                <li>
+                    <a href="#">MARC BY MARC JACOBS</a>
+                </li>
+                <li>
+                    <a href="#">MARC JACOBS</a>
+                </li>
+                <li>
+                    <a href="#">MARCELO BURLON COUNTY OF MILAN</a>
+                </li>
+                <li>
+                    <a href="#">MARKUS LUPFER</a>
+                </li>
+                <li>
+                    <a href="#">MARNI</a>
+                </li>
+                <li>
+                    <a href="#">MARSÈLL</a>
+                </li>
+                <li>
+                    <a href="#">MCQ ALEXANDER MCQUEEN</a>
+                </li>
+                <li>
+                    <a href="#">MIHARA YASUHIRO</a>
+                </li>
+                <li>
+                    <a href="#">MONCLER</a>
+                </li>
+                <li>
+                    <a href="#">MONCLER GAMME BLEU</a>
+                </li>
+                <li>
+                    <a href="#">MSGM</a>
+                </li>
+                <li>
+                    <a href="#">MYKITA</a>
+                </li>
+                <li>
+                    <a href="#">NAKED AND FAMOUS DENIM</a>
+                </li>
+                <li>
+                    <a href="#">NEIL BARRETT</a>
+                </li>
+                <li>
+                    <a href="#">NICHOLAS KIRKWOOD</a>
+                </li>
+                <li>
+                    <a href="#">NUDIE JEANS</a>
+                </li>
+                <li>
+                    <a href="#">OLIVER PEOPLES</a>
+                </li>
+                <li>
+                    <a href="#">ORLEBAR BROWN</a>
+                </li>
+                <li>
+                    <a href="#">PAUL SMITH</a>
+                </li>
+                <li>
+                    <a href="#">PAUL SMITH JEANS</a>
+                </li>
+                <li>
+                    <a href="#">PAUL SMITH LONDON</a>
+                </li>
+                <li>
+                    <a href="#">PIERRE HARDY</a>
+                </li>
+                <li>
+                    <a href="#">PS PAUL SMITH</a>
+                </li>
+                <li>
+                    <a href="#">PUBLIC SCHOOL</a>
+                </li>
+                <li>
+                    <a href="#">PYER MOSS</a>
+                </li>
+                <li>
+                    <a href="#">RAD BY RAD HOURANI</a>
+                </li>
+                <li>
+                    <a href="#">RAF SIMONS</a>
+                </li>
+                <li>
+                    <a href="#">RAG &amp; BONE</a>
+                </li>
+                <li>
+                    <a href="#">RICHARD NICOLL</a>
+                </li>
+                <li>
+                    <a href="#">RICK OWENS</a>
+                </li>
+                <li>
+                    <a href="#">SACAI</a>
+                </li>
+                <li>
+                    <a href="#">SAINT LAURENT</a>
+                </li>
+                <li>
+                    <a href="#">SILENT BY DAMIR DOMA</a>
+                </li>
+                <li>
+                    <a href="#">SUPER</a>
+                </li>
+                <li>
+                    <a href="#">SURFACE TO AIR</a>
+                </li>
+                <li>
+                    <a href="#">SWIMS</a>
+                </li>
+                <li>
+                    <a href="#">T BY ALEXANDER WANG</a>
+                </li>
+                <li>
+                    <a href="#">THOM BROWNE</a>
+                </li>
+                <li>
+                    <a href="#">TIGER OF SWEDEN</a>
+                </li>
+                <li>
+                    <a href="#">TIM COPPENS</a>
+                </li>
+                <li>
+                    <a href="#">TOM FORD</a>
+                </li>
+                <li>
+                    <a href="#">VALENTINO</a>
+                </li>
+                <li>
+                    <a href="#">VERSACE</a>
+                </li>
+                <li>
+                    <a href="#">VERSUS</a>
+                </li>
+                <li>
+                    <a href="#">WANT LES ESSENTIELS DE LA VIE</a>
+                </li>
+                <li>
+                    <a href="#">Y-3</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a class="fb" href="#">▲ SORT RESULTS</a>
+                </li>
+                <li>
+                    <a href="#">PRICE: HIGH TO LOW</a>
+                </li>
+                <li>
+                    <a href="#">PRICE: LOW TO HIGH</a>
+                </li>
+                <li>
+                    <a href="#">DATE: OLD TO NEW</a>
+                </li>
+                <li>
+                    <a href="#">DATE: NEW TO OLD</a>
+                </li>
+            </ul>
+
+        </div>
+        <!--侧边栏结束-->
+
+        <!--产品列表开始-->
+        <div class="product_list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_001.jpg" alt="" onload="FadeLimit(this,0,100,60)" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_002.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_003.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_004.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_005.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_006.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_007.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_008.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_009.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_010.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_011.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_012.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_013.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_014.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_015.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_016.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_017.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_018.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_019.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_020.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_021.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_022.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_023.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_024.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_025.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_026.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_027.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_028.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_029.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_030.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_031.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_032.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_033.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_034.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_035.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_036.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_037.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_038.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_039.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_040.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_041.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_042.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_043.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_044.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_045.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_046.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_047.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_048.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_049.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_050.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_051.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_052.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_053.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_054.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_055.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_056.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_057.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_058.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_059.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_060.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_061.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_062.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_063.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_064.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_065.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_066.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_067.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_068.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_069.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_070.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_071.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_072.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_073.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_074.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_075.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_076.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_077.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_078.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_079.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_080.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_081.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_082.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_083.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_084.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_085.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_086.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_087.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_088.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_089.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_090.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_091.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_092.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_093.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_094.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_095.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_096.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_097.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_098.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_099.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_100.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_101.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_102.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_103.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_104.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_105.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_106.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_107.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_108.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_109.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_110.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_111.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_112.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_113.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_114.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_115.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_116.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_117.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_118.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_119.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/men/img_120.jpg" alt="" onload="FadeLimit(this,0,100,60)" />
+                        <p>PAUL SMITH</p>
+                        <p>NAVY SLUB KNIT BLAZER</p>
+                        <p>$1535</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!--产品列表结束-->
+        <div class="clear"></div>
+        <!--产品分页开始-->
+        <div class="cp_pages">
+            <a class="cp_pages_l none" href="#">&larr;</a>
+            <div class="cp_pages_numbers">
+                <a class="current_pages" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">...</a>
+                <a href="#">20</a>
+            </div>
+            <a class="cp_pages_r" href="#">&rarr;</a>
+        </div>
+        <!--产品分页结束-->
+
+    </div>
+
+    <div class="footer">
+        <ul class="footer_ul">
+            <li>
+                <h2>ACCOUNT</h2>
+                <ul>
+                    <li>
+                        <a href="#">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="#">SHOPPING&nbsp;BAG</a>
+                    </li>
+                    <li>
+                        <a href="#">NEWSLETTER&nbsp;SIGN-UP</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2>CUSTOMER&nbsp;SERVICE</h2>
+                <ul>
+                    <li>
+                        <a href="#">HELP&nbsp;&amp;&nbsp;CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="#">SHIPPING&nbsp;&amp;&nbsp;TAXES</a>
+                    </li>
+                    <li>
+                        <a href="#">RETURN&nbsp;POLICY</a>
+                    </li>
+                    <li>
+                        <a href="#">CAREERS</a>
+                    </li>
+                    <li>
+                        <a href="#">AFFILIATES</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2>GIFTS</h2>
+                <ul>
+                    <li>
+                        <a href="#">GIFT&nbsp;CARDS</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2>SOCIAL</h2>
+                <ul>
+                    <li>
+                        <a href="#">FACEBOOK</a>
+                    </li>
+                    <li>
+                        <a href="#">TWITTER</a>
+                    </li>
+                    <li>
+                        <a href="#">INSTAGRAM</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            Copyright&nbsp;&copy;&nbsp;2013&nbsp;SSENSE.COM&nbsp;All&nbsp;Rights&nbsp;Reserved
+            <a href="#">Privacy&nbsp;policy</a>
+            <a href="#">Terms and&nbsp;conditions</a>
+            <a href="#">Editorial&nbsp;Archive</a>
+        </p>
+
+    </div>
+
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/base.js"></script>
+    <script src="js/common.js"></script>
+    <script type="text/javascript">
+        function init() {
+            //搜索绑Enter
+            btnBindEnter("searchBtn", "search");
+
+            //搜索默认值
+            searchDefault("search");
+        }
+        init();
+    </script>
+    <!--[if lt IE 9]>
+<script type="text/javascript" src="js/PIE/PIE.js"></script> 
+<script type="text/javascript">
+$(function() {
+	if (window.PIE) {
+		$('.rounded').each(function() {
+			PIE.attach(this); 
+		});	
+	}
+});
+</script>
+<![endif]-->
+</body>
+
+</html>

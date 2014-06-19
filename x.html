@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>测试</title>
+
+	<style type="text/css"> 
+	#black{
+		background-color: black;
+		opacity: 0.5;	
+		z-index: 999999;border:0px; 
+		margin: 0;
+		padding: 0;
+	}
+
+	.img{
+		max-height: 100%;
+		max-width:100%;
+		/*position: relative;
+		*/
+		border:0;
+		margin: 0;
+		padding: 0;
+		/*display: inline;
+		*/
+	}
+
+	p.test{
+		width:11em;
+		border:1px solid #000000;
+		word-wrap:break-word;
+		/*word-break:break-all;
+		*/
+		/*word-break:keep-all;
+		*/
+
+	}
+
+	.c1{ width:300px;　 border:1px solid red}
+
+	　　.c2{ width:300px;word-wrap:break-word;　 border:1px solid yellow}
+
+	　　.c3{ width:300px;word-wrap:break-word;word-break:break-all;　 border:1px solid green}
+
+	　　.c4{ width:300px;word-wrap:break-word;word-break:keep-all; border:1px solid blue}
+
+	　　.c5{ width:300px;word-break:break-all;　 border:1px solid black}
+
+	　　.c6{ width:300px;word-break:keep-all;　 border:1px solid red}
+
+	　　.c7{ width:300px;word-wrap:break-word;overflow:auto;　 border:1px solid yellow} 
+
+	/*.x{
+		height: 600px;
+		width: 100%;
+		background: url("x_img.jpg") no-repeat 0 0 ;
+	}
+	.x1{
+		background: url("x1_img.png") repeat 0 0 ;
+		filter: blur(10px);
+		-webkit-filter: blur(10px); 
+        -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+        
+	}*/
+	</style>
+
+	<body>
+<!-- 	<div>
+		<img src="images/index/banner_index.jpg" id="banner"/><div id="black"></div>
+	</div> -->
+	<script>
+// 	function blakcDIV(){
+// 		var imgH=document.getElementById('banner').offsetHeight;
+// 		var imgW=document.getElementById('banner').offsetWidth;
+
+// 		var imgH1=document.getElementById('banner').height;
+// 		var imgW1=document.getElementById('banner').width;
+
+// 		document.getElementById('black').style.height= imgH1+"px";
+// 		document.getElementById('black').style.width= imgW1+"px";
+// 		document.getElementById('black').style.marginTop= -imgH1+"px";// 		console.log("banner offsetHeight："+imgH+"\n"+"banner offsetWeight："+imgW+"\n"+"banner height: "+imgH1+"\n"+"banner width: "+imgW1); // 		// console.log("black offsetHeight: "+blackH+"\n"+"black offsetWeight: "+blackW);
+// 	}
+// 	function init(){
+// 		// window.onload=blakcDIV;
+// 		document.getElementById('banner').onload=blakcDIV;
+// 		window.onresize=blakcDIV;
+// 		// document.getElementsByTagName('').onresize=blakcDIV;
+// 		window.onbeforeunload=blakcDIV;
+// 	}
+// 	init();
+</script>
+
+<!-- <p class="test">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+
+.c1{ width:300px;　 border:1px solid red}
+
+　　<div class="c1">
+		adfadsfsfasdfsdfsadfasdfasdfasgasds
+	</div>
+
+
+　　<div class ="c1">
+	
+	　　This is all English. This is all English. This is all English.
+	
+　　</div>
+
+　　<div class ="c1">
+	
+	　　全是中文的情况。全是中文的情况。全是中文的情况。
+	
+　　</div>
+
+　　<div class ="c1">
+	
+	　　中英文混排的情况。Chinese and English. 中英文混排的情况。Chinese and English.
+	
+　　</div>
+
+　　<br>
+
+　　.c2{ width:300px;word-wrap:break-word; border:1px solid yellow}
+
+　　<div class="c2">
+
+	　　safjaskflasjfklsajfklasjflksajflksjflkasjfksafj
+
+　　</div>
+
+　　<div class="c2">
+
+	　　This is all English. This is all English. This is all English.
+
+　　</div>
+
+　　<div class="c2">
+
+	　　全是中文的情况。全是中文的情况。全是中文的情况。
+
+　　</div>
+
+　　<div class="c2">
+
+	　　中英文混排的情况。Chinese and English. 中英文混排的情况。Chinese and English.
+
+　　</div>
+
+　　<br>
+
+　　.c3{ width:300px;word-wrap:break-word;word-break:break-all;　 border:1px solid green}
+
+　　<div class="c3">
+
+	　　safjaskflasjfklsajfklasjflksajflksjflkasjfksafj
+
+　　</div>
+
+　　<div class="c3">
+
+	　　This is all English. This is all English. This is all English.
+
+　　</div>
+
+　　<div class="c3">
+
+	　　全是中文的情况。全是中文的情况。全是中文的情况。
+
+　　</div>
+
+　　<div class="c3">
+
+	　　中英文混排的情况。Chinese and English. 中英文混排的情况。Chinese and English.
+
+　　</div>
+
+　　<br>
+
+　　.c4{ width:300px;word-wrap:break-word;word-break:keep-all; border:1px solid blue}
+
+　　<div class="c4">
+
+	　　safjaskflasjfklsajfklasjflksajflksjflkasjfksafj
+
+　　</div>
+
+　　		<div class="c4">
+
+	　　This is all English. This is all English. This is all English.
+
+　　</div>
+
+　　<div class="c4">
+
+	　　全是中文的情况。全是中文的情况。全是中文的情况。
+
+　　</div>
+
+　　<div class="c4">
+
+	　　中英文混排的情况。Chinese and English. 中英文混排的情况。Chinese and English.
+
+　　</div>
+
+　　<br>
+
+　　.c5{ width:300px;word-break:break-all;　 border:1px solid black}
+
+　　<div class="c5">
+
+	　　safjaskflasjfklsajfklasjflksajflksjflkasjfksafj
+
+　　</div>
+
+　　<div class="c5">
+
+	　　This is all English. This is all English. This is all English.
+
+　　</div>
+
+　　<div class="c5">
+
+	　　全是中文的情况。全是中文的情况。全是中文的情况。
+
+　　</div>
+
+　　<div class="c5">
+
+	　　中英文混排的情况。Chinese and English. 中英文混排的情况。Chinese and English.
+
+
+
+　　</div>
+
+　　<br>
+
+　　.c6{ width:300px;word-break:keep-all;　 border:1px solid red}
+
+　　<div class="c6">
+
+	　　safjaskflasjfklsajfklasjflksajflksjflkasjfksafj
+
+　　</div>
+
+　　<div class="c6">
+
+	　　This is all English. This is all English. This is all English.
+
+　　</div>
+
+　　<div class="c6">
+
+	　　全是中文的情况。全是中文的情况。全是中文的情况。
+
+　　</div>
+
+　　<div class="c6">
+
+	　　中英文混排的情况。Chinese and English. 中英文混排的情况。Chinese and English.
+
+　　</div>
+
+　　<br>
+
+　　.c7{ width:300px;word-wrap:break-word;overflow:auto;　 border:1px solid yellow}
+
+　　<div class="c7">
+
+	　　safjaskflasjfklsajfklasjflksajflksjflkasjfksafj
+
+　　</div>
+
+　　<div class="c7">
+	　　This is all English. This is all English. This is all English.
+　　</div>
+
+　　<div class="c7">
+
+	　　全是中文的情况。全是中文的情况。全是中文的情况。
+
+　　</div>
+
+　　<div class="c7">
+
+	　　中英文混排的情况。Chinese and English. 中英文混排的情况。Chinese and English.
+
+　　</div> -->
+<!-- 
+<div class="x">
+	<div class="x1"></div>
+</div>
+<img src="x_img.jpg" class="x1">
+
+<form autocomplete="on">
+  <input type="file">  <br>
+  <input type="reset">  <br>
+  <input type="submit" formnovalidate formaction="index.html" formmethod="GET" formtarget="_blank" tabindex="1">  <br>
+  <input type="button">  <br>
+ </form> -->
+
+<script>
+	function test(event){
+		// var event;
+		alert("传递进来的事件是"+event);
+	}
+	window.onclick=test();
+
+
+	window.onclick=function test(event){
+		alert("传递进来的事件是"+event);
+	};
+</script>
+
+</body>
+</html>
