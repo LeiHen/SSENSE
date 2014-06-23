@@ -33,6 +33,8 @@ function imgTextC() {
 
         // $imgBan.get(i).style.cssText                  += ";width:" + w + "px;height:" + h + "px;";
         // $imgBan.get(i).style.cssText                  = "width:" + w + "px;height:" + h + "px;";
+        console.log('xxx');
+
     }
 
 }
