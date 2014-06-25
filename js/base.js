@@ -175,6 +175,9 @@ function loading(ID) {
             //            consoleDebug("还没结束么");
         } else {
             loadID.style.display = "none";
+            //            imgTextC();
+            //            document.body.style.display = 'block';
+            //            document.getElementsByName('body')[0].style.display = 'block';
         }
     }
     defer();
